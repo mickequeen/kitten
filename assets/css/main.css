@@ -1,0 +1,90 @@
+/*
+reseteando navegador
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+dando condiciones a puntos de quiebre
+*/
+
+/*
+medidas mas pequeñas, fondo de imagen de noche
+*/
+@media (min-width: 200px) and (max-width: 600px){
+  body{
+    background-image: url(../img/night.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    
+  }
+  /*
+  imagen correspondiente a esta condicion, centrado y tamaño
+  */
+  main{
+    height: 15em;
+    width: 15em;
+    background-image: url(../img/kitten-small.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 35%;
+  }
+}
+
+/*
+condicion medidas medianas, cambio de fondo
+*/
+@media (min-width: 600px) and (max-width: 1000px){
+  body{
+    background-image: url(../img/dawn.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  /*
+  cambio de imagen de gatito, medidas y posicion
+  */
+  main{
+    height: 25em;
+    width: 25em;
+    background-image: url(../img/kitten-large.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 35%;
+  }
+}
+
+/*
+condicion de medidas mas grandes, cambio de fondo
+*/
+@media (min-width: 1000px) and (max-width: 1400px){
+  body{
+    background-image: url(../img/sunny-day.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /*
+  cambio de foto de gatito, medidas y centrado
+  */
+  main{
+    height: 20em;
+    width: 20em;
+    background-image: url(../img/kitten-medium.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 25%;
+  }
+}
+
